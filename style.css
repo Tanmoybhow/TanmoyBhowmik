@@ -14,7 +14,7 @@ body {
 #dop{
     width: 10px;
     height: 10px;
-    background:red;
+    background:yellowgreen;
     border-radius: 50%;
     position: fixed;
     pointer-events: none; /* Prevents interference with mouse events */
