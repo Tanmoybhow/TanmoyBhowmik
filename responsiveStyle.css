@@ -1,0 +1,209 @@
+@media (max-width:480px) {
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+
+    /* nav hide */
+    nav {
+        /* border: 1px solid green; */
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        /* border: 1px solid red; */
+        /* display: none; */
+        opacity: 0;
+        /* Start as invisible */
+        visibility: hidden;
+        /* Prevent interaction when invisible */
+        /* transition: opacity 0.3s linear, visibility 0.3s linear; */
+        /* Smooth fade effect */
+    }
+    .navShow{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid blue;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: 9;
+        width: 100%;
+        background-color: rgba(0, 0, 0);
+        ;
+    }
+
+    nav ul li {
+        width: 100%;
+        border: 1px solid #f4f4f9;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+        display: inline-block;
+    }
+
+    #bars {
+        display: flex;
+    }
+
+
+    #hero .main {
+        width: 100%;
+        /* height: 100%; */
+        /* border: 1px solid blue; */
+    }
+
+    #hero .main h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #hero .main p {
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+
+    #hero .main a {
+        text-decoration: none;
+        text-align: center;
+        padding: 20px 30px;
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 10px;
+        display: inline-block;
+        position: relative;
+
+    }
+    .sticker{
+        width: 100px;
+        height: 100px;
+        /* background-color: #fff; */
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+        animation: hanumanAnimation 2s linear  infinite alternate ;
+    }
+    @keyframes hanumanAnimation {
+        0%{
+            top: 30px;
+        }
+        50%{
+            top: 40px;
+        }
+        100%{
+            top: 30px;
+        }
+        
+    }
+    .heading h2::after {
+        content: '';
+        width: 40%;
+    }
+    #about .main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #about .main>div {
+        width: 100%;
+    }
+    .right {
+        padding-left: 0;
+        /* border: 1px solid red; */
+        margin-top: 20px;
+    }
+    #myImg {
+        width: 35%;
+        float: left;
+        object-fit: cover;
+        margin: 0 10px 1px 0;
+    }
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .project-card{
+        width: 100%;
+        background-color: #fff;
+        padding: 15px;
+    }
+    .projectImg img{
+        height: 200px;
+    }
+
+    .myForm{
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid red; */
+        color: #fff;
+        z-index: 5;
+        position: relative;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #222222;
+        font-size: 0.8rem;
+        font-family: "Montserrat", sans-serif;
+        color: lightgray;
+        padding: 30px 0;
+        text-align: center;
+        position: relative;
+    }
+    
+    #social {
+        display: none;
+    
+    
+    }
+    #socialMobo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #socialMobo a {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        /* background-color: #fff; */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    #socialMobo a img{
+        width: 100%;
+
+    }
+    #dop{
+        display: none;
+    }
+    
+      
+       
+
+
+}

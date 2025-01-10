@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./responsiveStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scroll-box">
+    <div class="scroll-behind" id="scroll-behind">
+    <div id="scroll-box" class="percentShow">0%</div>
+    </div>
+  </div>
+    <div id="dop"></div>
+    <!-- <div id="gada">
+      <a href="#"
+        ><img src="./img/gada.png" alt="hanu hanu-gada" width="100%"
+      /></a>
+    </div> -->
+
+    <div class="alert-box" id="alert-box">
+      <span class="alert-message" id="alert-message">This is a beautiful alert message!</span>
+      <button class="close-btn" id="close-btn" onclick="">&times;</button>
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    
+    <header>
+      <div class="container header">
+        <div class="logo">TB</div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="bars">
+          <div class="barsItem"></div>
+          <div class="barsItem"></div>
+          <div class="barsItem"></div>
+          <div class="barsItem"></div>
+        </div>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="overLay"></div>
+      <div class="sticker">
+        <img src="./img/hanuman2.png" alt="hanuman" width="100%" />
+      </div>
+      <div class="main">
+        <h1>Hi, I’m Tanmoy Bhowmik.</h1>
+        <h1>A Passionate Web Developer.</h1>
+        <p>
+          I create modern and responsive websites to help businesses achieve
+          their online goals.
+        </p>
+        <a href="./assets/myCV.pdf" download="Tanmoy-Bhowmik-CV"
+          >Download My CV</a
+        >
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="heading">
+          <h2>About Me</h2>
+        </div>
+        <div class="main">
+          <div class="aboutCol" id="content">
+            <img src="./img/myImg.jpg" alt="my image" id="myImg" />
+            <p>
+              I am a full-stack web developer with a passion for creating
+              beautiful and functional websites. With experience in HTML, CSS,
+              JavaScript, and React, I aim to craft user-centric digital
+              experiences. Currently, I am working towards mastering frontend
+              development with a focus on JavaScript and modern frameworks.
+            </p>
+          </div>
+          <div class="right">
+            <div class="aboutCol" id="skill">
+              <div class="skills">
+                <div class="skillItem">
+                  <div class="logoPercent">
+                    <img src="./img/html-logo.png" alt="html-logo" />
+                    <p>80%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="progress" id="html"></div>
+                  </div>
+                </div>
+                <div class="skillItem">
+                  <div class="logoPercent">
+                    <img src="./img/css-logo.png" alt="css-logo" />
+                    <p>70%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="progress" id="css"></div>
+                  </div>
+                </div>
+                <div class="skillItem">
+                  <div class="logoPercent">
+                    <img src="./img/js-logo.png" alt="" />
+                    <p>60%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="progress" id="js"></div>
+                  </div>
+                </div>
+                <div class="skillItem">
+                  <div class="logoPercent">
+                    <img src="./img/react-logo.png" alt="" />
+                    <p>20%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="progress" id="react"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="heading">
+        <h2>My Projects</h2>
+      </div>
+      <div class="container projects">
+        <div class="project-card">
+          <div class="projectImg">
+            <img src="./img/project1.png" alt="projectImg" />
+          </div>
+          <div class="projectDetails">
+            <h3>Weather App</h3>
+            <div class="used">
+              <img src="./img/html-logo.png" alt="" />
+              <img src="./img/css-logo.png" alt="" />
+              <img src="./img/js-logo.png" alt="" />
+            </div>
+            <p>
+              A weather forecasting app using OpenWeatherMap API to display
+              real-time weather data.
+            </p>
+            <a
+              href="https://tanmoybhow.github.io/Tanmoy-s-Weather-Reports/"
+              target="_blank"
+              >Explore Project >></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="overLay"></div>
+      <div class="heading">
+        <h2>Get In Touch</h2>
+      </div>
+      <div class="container">
+        <div class="myForm">
+          <h3>
+            Have a project idea or just want to say hi? I’d love to hear from
+            you!
+          </h3>
+          <form action="#" method="dialog" id="myForm">
+            <div class="input">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ex: Robert Me"
+              />
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Ex: abc@gmail.com"
+              />
+            </div>
+            <div class="input">
+              <label for="msg">Massage</label>
+              <textarea
+                type="text"
+                name="msg"
+                id="msg"
+                placeholder="Hey..."
+                rows="8"
+              ></textarea>
+            </div>
+            <div class="btn">
+              <!-- <input type="submit" value="Sent Message" /> -->
+              <!-- <a href="mailto:tanmoybhowmik@gmail.com">Send Message</a> -->
+               <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="date"></span> Tanmoy Bhowmik. All Rights Reserved.</p>
+      <div id="social">
+        <a href="#" title="GitHub">
+          <img src="./img/github-logo.png" alt="" />
+        </a>
+        <a href="#" title="LinkedIn">
+          <img src="./img/linkedIn-logo.png" alt="" />
+        </a>
+        <a href="#" title="Twitter">
+          <img src="./img/twiiter-logo.png" alt="" />
+        </a>
+      </div>
+      <div id="socialMobo">
+        <a href="#" title="GitHub">
+          <img src="./img/github-logo.png" alt="" />
+        </a>
+        <a href="#" title="LinkedIn">
+          <img src="./img/linkedIn-logo.png" alt="" />
+        </a>
+        <a href="#" title="Twitter">
+          <img src="./img/twiiter-logo.png" alt="" />
+        </a>
+      </div>
+    </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
