@@ -22,10 +22,10 @@ const arrow = document.querySelector("#gada");
 // }
 
 // Function to check if an element is above or in the viewport
-function isAfterSection2() {
-  const rect = about.getBoundingClientRect();
-  return rect.bottom <= window.innerHeight;
-}
+// function isAfterSection2() {
+//   const rect = about.getBoundingClientRect();
+//   return rect.bottom <= window.innerHeight;
+// }
 
 // Scroll event listener
 // window.addEventListener("scroll", () => {
@@ -223,3 +223,17 @@ scrollBox.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 });
+
+
+// scroll Animation
+const heading = document.querySelectorAll('.heading');
+heading.forEach((e,index)=>{
+  if(index%2==0){
+  e.setAttribute('data-aos','fade-left');
+  }else{
+  e.setAttribute('data-aos','fade-right');
+  }
+  e.setAttribute('data-aos-duration','1000');
+
+})
+AOS.init();

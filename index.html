@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="scroll-box">
@@ -57,25 +58,24 @@
         <img src="./img/hanuman2.png" alt="hanuman" width="100%" />
       </div>
       <div class="main">
-        <h1>Hi, I’m Tanmoy Bhowmik.</h1>
-        <h1>A Passionate Web Developer.</h1>
-        <p>
+        <h1 data-aos="fade-left" data-aos-duration="1000">Hi, I’m Tanmoy Bhowmik.</h1>
+        <h1 data-aos="fade-left" data-aos-duration="1000">A Passionate Web Developer.</h1>
+        <p data-aos="fade-right" data-aos-duration="1000">
           I create modern and responsive websites to help businesses achieve
           their online goals.
         </p>
-        <a href="./assets/myCV.pdf" download="Tanmoy-Bhowmik-CV"
-          >Download My CV</a
+        <a href="./assets/myCV.pdf" download="Tanmoy-Bhowmik-CV">Download My CV</a
         >
       </div>
     </section>
 
     <section id="about">
       <div class="container">
-        <div class="heading">
+        <div class="heading" >
           <h2>About Me</h2>
         </div>
         <div class="main">
-          <div class="aboutCol" id="content">
+          <div class="aboutCol" id="content" data-aos="fade-down-right" data-aos-duration="1000">
             <img src="./img/myImg.jpg" alt="my image" id="myImg" />
             <p>
               I am a full-stack web developer with a passion for creating
@@ -85,7 +85,7 @@
               development with a focus on JavaScript and modern frameworks.
             </p>
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-up-left" data-aos-duration="1000">
             <div class="aboutCol" id="skill">
               <div class="skills">
                 <div class="skillItem">
@@ -237,6 +237,7 @@
       </div>
     </footer>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
