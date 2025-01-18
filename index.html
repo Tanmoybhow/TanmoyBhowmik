@@ -12,14 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="scroll-box">
-    <div class="scroll-behind" id="scroll-behind">
-    <div id="scroll-box" class="percentShow">0%</div>
+      <div class="scroll-behind" id="scroll-behind">
+        <div id="scroll-box" class="percentShow">0%</div>
+      </div>
     </div>
-  </div>
     <div id="dop"></div>
     <!-- <div id="gada">
       <a href="#"
@@ -28,11 +28,13 @@
     </div> -->
 
     <div class="alert-box" id="alert-box">
-      <span class="alert-message" id="alert-message">This is a beautiful alert message!</span>
+      <span class="alert-message" id="alert-message"
+        >This is a beautiful alert message!</span
+      >
       <button class="close-btn" id="close-btn" onclick="">&times;</button>
       <div class="progress-bar" id="progress-bar"></div>
     </div>
-    
+
     <header>
       <div class="container header">
         <div class="logo">TB</div>
@@ -58,24 +60,36 @@
         <img src="./img/hanuman2.png" alt="hanuman" width="100%" />
       </div>
       <div class="main">
-        <h1 data-aos="fade-left" data-aos-duration="1000">Hi, I’m Tanmoy Bhowmik.</h1>
-        <h1 data-aos="fade-left" data-aos-duration="1000">A Passionate Web Developer.</h1>
+        <h1 data-aos="fade-left" data-aos-duration="1000">
+          Hi, I’m Tanmoy Bhowmik.
+        </h1>
+        <h1 data-aos="fade-left" data-aos-duration="1000">
+          A Passionate Web Developer.
+        </h1>
         <p data-aos="fade-right" data-aos-duration="1000">
           I create modern and responsive websites to help businesses achieve
           their online goals.
         </p>
-        <a href="./assets/Tanmoy-Bhowmik-Resume (2).pdf" download="Tanmoy-Bhowmik-CV">Download My CV</a
+        <a
+          href="./assets/Tanmoy-Bhowmik-Resume (2).pdf"
+          download="Tanmoy-Bhowmik-CV"
+          >Download My CV</a
         >
       </div>
     </section>
 
     <section id="about">
       <div class="container">
-        <div class="heading" >
+        <div class="heading">
           <h2>About Me</h2>
         </div>
         <div class="main">
-          <div class="aboutCol" id="content" data-aos="fade-down-right" data-aos-duration="1000">
+          <div
+            class="aboutCol"
+            id="content"
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+          >
             <img src="./img/myImg.jpg" alt="my image" id="myImg" />
             <p>
               I am a full-stack web developer with a passion for creating
@@ -158,6 +172,32 @@
             >
           </div>
         </div>
+        <div class="project-card">
+          <div class="projectImg">
+            <img src="./img/project2.png" alt="projectImg" />
+          </div>
+          <div class="projectDetails">
+            <h3>Quiz Game App</h3>
+            <div class="used">
+              <img src="./img/html-logo.png" alt="" />
+              <img src="./img/css-logo.png" alt="" />
+              <img src="./img/js-logo.png" alt="" />
+            </div>
+            <p>
+              A mobile-friendly quiz application built with HTML, CSS, and
+              Vanilla JavaScript. The app features interactive gameplay with
+              four-option questions, uses local storage for managing questions
+              persistently, and is optimized for seamless performance on mobile
+              devices. This lightweight project highlights my skills in core web
+              development and responsive design.
+            </p>
+            <a
+              href="https://tanmoy-quizgame.netlify.app/"
+              target="_blank"
+              >Explore Project >></a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
@@ -204,7 +244,7 @@
             <div class="btn">
               <!-- <input type="submit" value="Sent Message" /> -->
               <!-- <a href="mailto:tanmoybhowmik@gmail.com">Send Message</a> -->
-               <button type="submit">Send Message</button>
+              <button type="submit">Send Message</button>
             </div>
           </form>
         </div>

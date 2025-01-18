@@ -188,7 +188,7 @@ window.addEventListener("scroll", () => {
   if (displayPercentage < 100) {
     scrollBox.textContent = `${Math.floor(scrollPercentage)}%`;
   }
-
+  console.log(scrollBox.innerText)
   // Check if the user has reached the bottom
   if (displayPercentage >= 96) {
     scrollBox.innerHTML = "↑"; // Change to up arrow when at the bottom
