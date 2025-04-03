@@ -518,6 +518,10 @@ section {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 24%;
     background-color: #fff;
     padding: 15px;
@@ -544,12 +548,18 @@ section {
 
 .projectDetails {
     font-family: "Open Sans", sans-serif;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .projectDetails h3 {
     font-size: 1.5rem;
 }
-
+.projectDetails > p{
+    flex-grow: 1;
+}
 .used {
     width: 100%;
     /* border: 1px solid red; */

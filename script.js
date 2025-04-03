@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => {
 document.querySelector("#html").setAttribute("style", "width:80%");
 document.querySelector("#css").setAttribute("style", "width:70%");
 document.querySelector("#js").setAttribute("style", "width:60%");
-document.querySelector("#react").setAttribute("style", "width:20%");
+document.querySelector("#react").setAttribute("style", "width:50%");
 
 const alertBox = document.getElementById("alert-box");
 const closeBtn = document.getElementById("close-btn");
